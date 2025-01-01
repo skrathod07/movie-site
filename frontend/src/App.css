@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: green;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+  }
+
+  .container{
+    max-width: 120rem;
+    margin: 0 auto;
+    background-color: #f0f8ff;
+  }
+  a{
+    text-decoration: none;
+  }
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  .hero-heading{
+    width: 100%;
+    background-color: rgba(0, 255, 255, 0.223);
+    justify-content: center;
+    /* margin-top: 2rem ; */
+    margin-bottom: 2rem;
+    font-size: 5rem;
+    color: green;
+    padding: 0 5rem;
+  }
+
+  .search-bar{
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: fixed; */
+    
+  }
+
+  .search-text{
+    padding: 1.2rem ;
+    font-size: 1.8rem;
+    border: 2px solid green;
+    border-radius: 5rem;
+    color:green;
+
+  }
+  
+  .search-icon{
+    display: flex;
+    font-size: 3.4rem;
+    text-decoration: none;
+    /* padding: 0.4rem; */
+    border: none;
+    margin-left: 1rem;
+    background: none;
+    cursor: pointer;
+  }
+
+
+  .movie-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 2rem;
+    margin: 2rem;
+    padding: 0;
+
+  }
+  .movie-card{
+    text-align: center;
+    border: 0.1rem solid #ddd;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    transition: transform 0.3s;
+    background-color: #fff;
+
+  }
+
+  .movie-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  .movie-card img{
+    width: 100%;
+    height: auto;
+    /* object-fit: cover; */
+    
+  }
+
+  .movie-card h3{
+    font-size: 1.8rem;
+    margin: 1rem 0;
+
+  }
+
+  .movie-card p{
+    font-size: 1.3rem;
+    color: #666;
+  }
+
+  .movie-details{
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap; */
+    
+    max-width: 80rem;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+
+  .movie-desc{
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .movie-details img{
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    /* float: left; */
+    margin-right: 20px;
+  }
+  .movie-details h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .movie-details p{
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    line-height: 1.5;
+  }
+
+@media (max-width:786px){
+    .movie-desc{
+        flex-wrap: wrap;
+    }
+}

@@ -8,7 +8,7 @@ import SearchBar from './components/SearchBar';
 import axios from 'axios';
 function App() {
 
-  // searchbar done, css pending
+  // searchbar done, css done
   // movie list done, css pending
   // movie details pending...
 
@@ -40,8 +40,8 @@ function App() {
 
   return (
     <Router>
-      <div>
-        <h1>Movie Search</h1>
+      <div className='container'>
+        <h1 className='hero-heading'>Movie Search</h1>
         <Routes>
           <Route path='/' element={
             <>

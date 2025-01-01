@@ -18,16 +18,24 @@ const MovieDetails = () => {
 
   },[id]);
 
-  if(!movie) return <p>Loading...</p>;
+  if(!movie) return <p className='hero'>Loading...</p>;
   return (
     <div>
       <div className='movie-details'>
         <h2>{movie.Title}</h2>
         <p>{movie.Year}</p>
-        <img src={movie.Poster} alt={movie.Title}/>
-        <p>Genre:{movie.Genre}</p>
-        <p>Director:{movie.Director}</p>
-        <p>Plot: {movie.Plot}</p>
+       
+        <div className='movie-desc'>
+
+          <img src={movie.Poster} alt={movie.Title}/>
+          <div>
+          <p><strong>Genre:</strong>{movie.Genre}</p>
+          <p><strong>Director:</strong>{movie.Director}</p>
+          <p> <strong>Plot:</strong> {movie.Plot}</p>
+            
+          </div>
+        
+        </div>
       </div>
     </div>
   )
