@@ -1,0 +1,9 @@
+
+https://www.omdbapi.com/?apikey=d2e203ad&s=batman
+
+popular movies-:
+
+https://www.omdbapi.com/?apikey=${API_KEY}&s=batman
+
+search movies :
+https://www.omdbapi.com/?apikey=${API_KEY}&s=${query}
